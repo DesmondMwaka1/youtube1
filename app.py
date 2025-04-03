@@ -1,5 +1,4 @@
 from flask import Flask, request, send_file
-from werkzeug.middleware.proxy_fix import ProxyFix
 import yt_dlp
 
 app = Flask(__name__)
