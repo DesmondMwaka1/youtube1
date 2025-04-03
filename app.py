@@ -2,7 +2,6 @@ from flask import Flask, request, send_file
 import yt_dlp
 
 app = Flask(__name__)
-app.wsgi_app = ProxyFix(app.wsgi_app)  # Fix for reverse proxy issues with Flask in Vercel
 
 @app.route('/upload', methods=['POST'])
 def download_video():
