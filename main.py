@@ -20,7 +20,8 @@ def download_video():
         # yt-dlp options
         ydl_opts = {
             'format': 'best',  #best quality video
-            'outtmpl': video_title  # Save to a specific local file
+            'outtmpl': video_title,  # Save to a specific local file
+            'cookiefile': 'cookies.txt' #cookies
         }
 
         # Download the video
