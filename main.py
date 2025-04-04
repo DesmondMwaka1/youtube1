@@ -3,11 +3,11 @@ from flask import Flask, request, send_file,render_template
 
 app = Flask(__name__)
 
-@app.route('/upload', methods=['POST'])
-
+@app.route('/')
 def home():
     return render_template("index.html")
 
+@app.route('/upload', methods=['POST'])
 def download_video():
     try:
         #URL from the form input
