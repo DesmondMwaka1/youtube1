@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/upload', methods=['POST'])
 
 def home():
-    return render_template("index1.html")
+    return render_template("index.html")
 
 def download_video():
     try:
